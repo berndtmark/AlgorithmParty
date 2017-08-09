@@ -46,6 +46,9 @@
   <ItemGroup>
     <Compile Include="Enum\Color.cs" />
     <Compile Include="Models\NodeModel.cs" />
+    <Compile Include="Patterns\Fluent Builder\Team.cs" />
+    <Compile Include="Patterns\Fluent Builder\TeamApp.cs" />
+    <Compile Include="Patterns\Fluent Builder\TeamBuilder.cs" />
     <Compile Include="Patterns\Singleton.cs" />
     <Compile Include="Problems\Consecutive\ConsecutiveString.cs" />
     <Compile Include="Problems\Minesweeper\Minesweeper.cs" />
