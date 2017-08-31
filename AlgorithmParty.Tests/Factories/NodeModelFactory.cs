@@ -10,18 +10,18 @@ namespace AlgorithmParty.Tests.Factories
 {
     public static class NodeModelFactory
     {
-        public static NodeModel SimpleNode()
+        public static Node SimpleNode()
         {
-            var baseNode = new NodeModel(Color.Blue);
+            var baseNode = new Node(Color.Blue);
 
-            baseNode.WestNode = new NodeModel(Color.Blue);
-            baseNode.EastNode = new NodeModel(Color.Blue);
-            baseNode.NorthNode = new NodeModel(Color.Blue);
-            baseNode.SouthNode = new NodeModel(Color.Blue);
+            baseNode.WestNode = new Node(Color.Blue);
+            baseNode.EastNode = new Node(Color.Blue);
+            baseNode.NorthNode = new Node(Color.Blue);
+            baseNode.SouthNode = new Node(Color.Blue);
 
-            baseNode.SouthNode.WestNode = new NodeModel(Color.Blue);
-            baseNode.SouthNode.EastNode = new NodeModel(Color.Blue);
-            baseNode.SouthNode.NorthNode = new NodeModel(Color.Blue);
+            baseNode.SouthNode.WestNode = new Node(Color.Blue);
+            baseNode.SouthNode.EastNode = new Node(Color.Blue);
+            baseNode.SouthNode.NorthNode = new Node(Color.Blue);
 
             return baseNode;
         }

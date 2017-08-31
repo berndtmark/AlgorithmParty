@@ -7,25 +7,25 @@ using AlgorithmParty.Enum;
 
 namespace AlgorithmParty.Models
 {
-    public class NodeModel
+    public class Node
     {
-        public NodeModel(Color color)
+        public Node(Color color)
         {
             this.Color = color;
         }
 
-        public NodeModel()
+        public Node()
         {
 
         }
 
-        public NodeModel NorthNode { get; set; }
+        public Node NorthNode { get; set; }
 
-        public NodeModel SouthNode { get; set; }
+        public Node SouthNode { get; set; }
 
-        public NodeModel WestNode { get; set; }
+        public Node WestNode { get; set; }
 
-        public NodeModel EastNode { get; set; }
+        public Node EastNode { get; set; }
 
         public Color Color { get; set; }
 

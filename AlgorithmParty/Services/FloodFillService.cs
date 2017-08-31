@@ -10,7 +10,7 @@ namespace AlgorithmParty.Service
 {
     public static class FloodFillService
     {
-        public static void FloodFill(NodeModel node, Color targetColor, Color replacementColor)
+        public static void FloodFill(Node node, Color targetColor, Color replacementColor)
         {
             // Catch those empty node ends
             if (node == null)
@@ -40,14 +40,14 @@ namespace AlgorithmParty.Service
             return;
         }
 
-        public static void FloodFillQueueImplementation(NodeModel node, Color targerColor, Color replacementColor)
+        public static void FloodFillQueueImplementation(Node node, Color targerColor, Color replacementColor)
         {
             if (targerColor == replacementColor)
             {
                 return;
             }
 
-            var q = new Queue<NodeModel>();
+            var q = new Queue<Node>();
 
             q.Enqueue(node);
 

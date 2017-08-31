@@ -91,6 +91,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceTests\ArrayServiceTests.cs" />
     <Compile Include="ProblemTests\RomanNumberConverterTests.cs" />
+    <Compile Include="ServiceTests\GeneralProblemServiceTests.cs" />
     <Compile Include="ServiceTests\RecursionServiceTests.cs" />
     <Compile Include="ProblemTests\ConsecutiveStringTests.cs" />
     <Compile Include="ServiceTests\SimpleAlgorithmServiceTests.cs" />
