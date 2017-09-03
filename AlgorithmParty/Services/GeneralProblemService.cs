@@ -43,5 +43,31 @@ namespace AlgorithmParty.Services
 
             return maxUsers;
         }
+
+        public static int MatchingParentheses(string str)
+        {
+            const char openingSequence = '(';
+            const char closingSequence = ')';
+            int counter = 0;
+            int totalCount = 0;
+
+            foreach (char c in str.ToArray())
+            {
+                if (c == openingSequence)
+                {
+                    counter++;
+                }
+                else if (c == closingSequence)
+                {
+                    if (counter > 0)
+                    {
+                        counter--;
+                        totalCount++;
+                    }
+                }
+            }
+
+            return totalCount;
+        }
     }
 }
