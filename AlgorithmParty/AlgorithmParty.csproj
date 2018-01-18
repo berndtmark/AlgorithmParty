@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Enum\Color.cs" />
     <Compile Include="Models\Node.cs" />
+    <Compile Include="Models\Tree.cs" />
     <Compile Include="Patterns\Fluent Builder\Team.cs" />
     <Compile Include="Patterns\Fluent Builder\TeamApp.cs" />
     <Compile Include="Patterns\Fluent Builder\TeamBuilder.cs" />

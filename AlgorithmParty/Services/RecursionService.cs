@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AlgorithmParty.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,7 @@ namespace AlgorithmParty.Services
             return x;
         }
 
+        #region String Permutations
         public static string[] GetStringPermutations(string str)
         {
             return GetStringPermutations(str.ToArray(), 0, str.Length - 1, new List<string>());
@@ -48,6 +50,22 @@ namespace AlgorithmParty.Services
             var temp = a;
             a = b;
             b = temp;
+        } 
+        #endregion
+
+        public static int TreeCount(IList<Tree> tree)
+        {
+            foreach (var item in tree)
+            {
+                if (item.Leaves == null)
+                {
+                    return item.Count;
+                }
+
+                return item.Count + TreeCount(item.Leaves);
+            }
+
+            return 0;
         }
     }
 }
