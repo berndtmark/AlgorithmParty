@@ -1,13 +1,12 @@
-﻿using System;
-using AlgorithmParty.Services;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using AlgorithmParty.Services;
+using NUnit.Framework;
 
 namespace AlgorithmParty.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class ArrayServiceTests
     {
-        [TestMethod]
+        [Test]
         public void InnerJoin_CorrectOutput()
         {
             int[] arr1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -18,7 +17,7 @@ namespace AlgorithmParty.Tests
             CollectionAssert.AreEqual(new int[] { 5, 6, 7, 8, 9, 10 }, result);
         }
 
-        [TestMethod]
+        [Test]
         public void InnerJoinWithoutLinq_CorrectOutput()
         {
             int[] arr1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -29,7 +28,7 @@ namespace AlgorithmParty.Tests
             CollectionAssert.AreEqual(new int[] { 5, 6, 7, 8, 9, 10 }, result);
         }
 
-        [TestMethod]
+        [Test]
         public void LeftJoin_CorrectOutput()
         {
             int[] arr1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };

@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AlgorithmParty.Services;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace AlgorithmParty.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class ClosureTests
     {
-        [TestMethod]
+        [Test]
         public void ClosureDelegate()
         {
             var result = ClosureService.ClosureDelegate();
@@ -20,7 +20,7 @@ namespace AlgorithmParty.Tests
             Assert.AreEqual(9, result(6));
         }
 
-        [TestMethod]
+        [Test]
         public void ClosureLambda()
         {
             var result = ClosureService.ClosureLambda();

@@ -2,14 +2,14 @@
 using AlgorithmParty.Enum;
 using AlgorithmParty.Service;
 using AlgorithmParty.Tests.Factories;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace AlgorithmParty.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class FloodFillServiceTest
     {
-        [TestMethod]
+        [Test]
         public void FloodFillService_WithValidData()
         {
             // Arrange
@@ -22,7 +22,7 @@ namespace AlgorithmParty.Tests
             Assert.IsTrue(node.SouthNode.NorthNode.Color == Color.Red);
         }
 
-        [TestMethod]
+        [Test]
         public void FloodFillQueueImplementation_WithValidData()
         {
             // Arrange
